@@ -1,0 +1,61 @@
+@if (isLoadingConfig()) {
+    <div class="loading-state">
+        <mat-spinner diameter="20" />
+        <span>Loading available services…</span>
+    </div>
+} @else if (configError()) {
+    <div class="error-state">{{ configError() }}</div>
+} @else {
+    <form [formGroup]="form">
+        <mat-form-field class="w-full">
+            <mat-label>Service</mat-label>
+            <mat-select
+                id="serviceId"
+                formControlName="serviceId"
+                (selectionChange)="onServiceSelected($event.value)"
+            >
+                @for (service of services(); track service.id) {
+                    <mat-option [value]="service.id">
+                        {{ service.display_name }}
+                    </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="w-full">
+            <mat-label>Playlist title</mat-label>
+            <input matInput type="text" id="title" formControlName="title" />
+        </mat-form-field>
+
+        <mat-form-field class="w-full">
+            <mat-label>Username</mat-label>
+            <input
+                matInput
+                type="text"
+                id="username"
+                formControlName="username"
+                autocomplete="username"
+            />
+        </mat-form-field>
+
+        <mat-form-field class="w-full">
+            <mat-label>Password</mat-label>
+            <input
+                matInput
+                type="password"
+                id="password"
+                formControlName="password"
+                autocomplete="current-password"
+            />
+        </mat-form-field>
+
+        @if (connectionStatus) {
+            <div class="connection-status">
+                <mat-icon [class]="getStatusClass()">
+                    {{ getStatusIcon() }}
+                </mat-icon>
+                <span [class]="getStatusClass()">{{ getStatusMessage() }}</span>
+            </div>
+        }
+    </form>
+}

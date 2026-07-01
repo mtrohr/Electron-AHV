@@ -24,6 +24,7 @@ import { FileUploadComponent } from '../file-upload/file-upload.component';
 import { StalkerPortalImportComponent } from '../stalker-portal-import/stalker-portal-import.component';
 import { TextImportComponent } from '../text-import/text-import.component';
 import { UrlUploadComponent } from '../url-upload/url-upload.component';
+import { StreamvaultImportComponent } from '../streamvault-import/streamvault-import.component';
 import { XtreamCodeImportComponent } from '../xtream-code-import/xtream-code-import.component';
 
 /**
@@ -45,6 +46,7 @@ export interface PlaylistMethodOption {
         MatDialogModule,
         MatIcon,
         StalkerPortalImportComponent,
+        StreamvaultImportComponent,
         TextImportComponent,
         TranslateModule,
         UrlUploadComponent,
@@ -70,16 +72,17 @@ export class AddPlaylistDialogComponent {
     readonly textImport = viewChild(TextImportComponent);
     readonly xtreamImport = viewChild(XtreamCodeImportComponent);
     readonly stalkerImport = viewChild(StalkerPortalImportComponent);
+    readonly streamvaultImport = viewChild(StreamvaultImportComponent);
 
-    readonly method = signal<PlaylistType>('url');
+    readonly method = signal<PlaylistType>('streamvault');
 
-    // Order matches the v0.22 mockup left-to-right: URL first (Most common),
-    // then File, Xtream credentials, Stalker portal, raw text paste. Each
-    // entry stands on its own — no nested subtypes. Labels are short and
-    // sentence-cased; the "Add via …" / "Add Xtreme Code" wording from the
-    // old tab labels is redundant inside a dialog already titled "Add
-    // playlist".
     readonly methodOptions: PlaylistMethodOption[] = [
+        {
+            value: 'streamvault',
+            icon: 'stream',
+            labelKey: 'HOME.ADD_PLAYLIST.METHOD_STREAMVAULT_LABEL',
+            subKey: 'HOME.ADD_PLAYLIST.METHOD_STREAMVAULT_SUB',
+        },
         {
             value: 'url',
             icon: 'public',
@@ -181,6 +184,9 @@ export class AddPlaylistDialogComponent {
 
     clearCurrentForm(): void {
         switch (this.playlistType()) {
+            case 'streamvault':
+                this.streamvaultImport()?.clearForm();
+                break;
             case 'url':
                 this.urlUpload()?.clearForm();
                 break;
@@ -201,6 +207,8 @@ export class AddPlaylistDialogComponent {
 
     isClearDisabled(): boolean {
         switch (this.playlistType()) {
+            case 'streamvault':
+                return !!this.streamvaultImport()?.isTestingConnection;
             case 'file':
                 return (
                     !this.fileUpload()?.selectedFile() ||

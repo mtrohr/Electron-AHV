@@ -38,6 +38,9 @@
 
         <div class="apd-form-area">
             @switch (playlistType()) {
+                @case ('streamvault') {
+                    <app-streamvault-import (addClicked)="closeDialog()" />
+                }
                 @case ('file') {
                     <app-file-upload
                         (fileRejected)="rejectFile($event)"
@@ -79,6 +82,32 @@
             </button>
 
             @switch (playlistType()) {
+                @case ('streamvault') {
+                    <button
+                        mat-stroked-button
+                        type="button"
+                        [disabled]="
+                            !streamvaultImport()?.isValid ||
+                            streamvaultImport()?.isTestingConnection
+                        "
+                        (click)="streamvaultImport()?.testConnection()"
+                    >
+                        {{
+                            streamvaultImport()?.isTestingConnection
+                                ? 'Testing...'
+                                : 'Test Connection'
+                        }}
+                    </button>
+                    <button
+                        mat-flat-button
+                        color="primary"
+                        type="button"
+                        [disabled]="!streamvaultImport()?.isValid"
+                        (click)="streamvaultImport()?.addPlaylist()"
+                    >
+                        Add
+                    </button>
+                }
                 @case ('url') {
                     <button
                         mat-flat-button
