@@ -6,7 +6,7 @@
     "SHOW_LESS": "Menos",
     "PLAYLISTS": "Listas de reproducción",
     "HOME": {
-        "TITLE": "IPTVnator",
+        "TITLE": "Electron AHV",
         "SUBTITLE": "Selecciona una lista de reproducción del listado o añade una nueva lista al cargar archivos o por una url",
         "TABS": {
             "RECENTLY_ADDED": "Listas añadidas recientemente",
@@ -19,7 +19,7 @@
         "PLAYLISTS": {
             "NO_PLAYLISTS": "No se añadieron listas de reproducción",
             "ADD_FIRST": "Por favor, añade tu primera lista de la otra pestaña",
-            "WELCOME_TITLE": "Bienvenido a IPTVnator",
+            "WELCOME_TITLE": "Bienvenido a Electron AHV",
             "WELCOME_DESCRIPTION": "Comience su viaje de streaming agregando su primera lista de reproducción. Conéctese a su servicio IPTV favorito y disfrute de TV en vivo, películas y series.",
             "ADD_YOUR_FIRST": "Agregar su primera lista",
             "FEATURE_M3U": "Archivos M3U/M3U8",
@@ -162,7 +162,7 @@
             "ERROR_TLS_HOST_UNKNOWN": "Could not determine the playlist host. Please retry manually.",
             "TRUST_TLS_HOST": "Trust host",
             "TRUST_TLS_HOST_TITLE": "Trust invalid certificate?",
-            "TRUST_TLS_HOST_WARNING": "Only continue if you trust this playlist host. IPTVnator will allow invalid TLS certificates for this host, but other hosts still require valid certificates."
+            "TRUST_TLS_HOST_WARNING": "Only continue if you trust this playlist host. Electron AHV will allow invalid TLS certificates for this host, but other hosts still require valid certificates."
         },
         "TEXT_IMPORT": {
             "LABEL": "Inserte la playlist m3u(8) como texto",
@@ -240,7 +240,7 @@
         "NAV_ABOUT": "Acerca de",
         "APP_PREFERENCES": "Preferencias de la app",
         "HERO_EYEBROW": "Ajustes del espacio de trabajo",
-        "HERO_TITLE": "Configura como se siente IPTVnator",
+        "HERO_TITLE": "Configura como se siente Electron AHV",
         "HERO_DESCRIPTION": "Ajusta reproduccion, guias, acceso remoto y manejo de datos desde un solo lugar sin perder el estilo actual del espacio de trabajo.",
         "SUBTITLE": "Cambiar la configuración de la aplicación",
         "DESCRIPTION": "Por favor, adapta las opciones de la siguiente lista y confirma con un botón de guardar",
@@ -294,14 +294,14 @@
         "COVER_SIZE_MEDIUM": "Mediano",
         "COVER_SIZE_LARGE": "Grande",
         "STARTUP_BEHAVIOR": "Vista al iniciar",
-        "STARTUP_BEHAVIOR_DESCRIPTION": "Elige si IPTVnator abre la primera vista disponible del espacio de trabajo o restaura la última vista a nivel de sección. Primera vista significa Panel cuando está activado, de lo contrario Fuentes.",
+        "STARTUP_BEHAVIOR_DESCRIPTION": "Elige si Electron AHV abre la primera vista disponible del espacio de trabajo o restaura la última vista a nivel de sección. Primera vista significa Panel cuando está activado, de lo contrario Fuentes.",
         "STARTUP_BEHAVIOR_FIRST_VIEW": "Primera vista disponible",
         "STARTUP_BEHAVIOR_RESTORE_LAST_VIEW": "Restaurar última vista",
         "SHOW_CAPTIONS_DESCRIPTION": "Mostrar u ocultar subtítulos por defecto",
         "SHOW_EXTERNAL_PLAYBACK_BAR": "Mostrar pie de reproducción actual",
         "SHOW_EXTERNAL_PLAYBACK_BAR_DESCRIPTION": "Mantén visible la barra de estado del reproductor externo en la parte inferior del espacio de trabajo en escritorio.",
         "VERSION_DESCRIPTION": "Versión actual de la aplicación.",
-        "ABOUT_SUBTITLE": "Versión, enlaces del proyecto y formas de apoyar a IPTVnator.",
+        "ABOUT_SUBTITLE": "Versión, enlaces del proyecto y formas de apoyar a Electron AHV.",
         "EMBEDDED_MPV_NOTICE_TITLE": "Runtime de MPV integrado",
         "EMBEDDED_MPV_NOTICE_DESCRIPTION": "Las compilaciones de escritorio pueden incluir las bibliotecas libmpv y FFmpeg integradas para el reproductor MPV integrado experimental. Los usuarios no necesitan instalar la app MPV por separado; MPV externo y VLC siguen disponibles como reproductores alternativos.",
         "COMMUNITY": "Proyecto y comunidad",
@@ -311,10 +311,10 @@
         "LINK_BLOG_DESCRIPTION": "Notas de versión, consejos y novedades del proyecto",
         "LINK_TELEGRAM_DESCRIPTION": "Anuncios, comunidad y soporte",
         "SUPPORT_TITLE": "Apoya el proyecto",
-        "SUPPORT_DESCRIPTION": "IPTVnator es gratuito y de código abierto, desarrollado a la vista. Si forma parte de tu rutina diaria, una pequeña contribución ayuda a mantener vivo el proyecto y a definir lo que viene — gracias.",
+        "SUPPORT_DESCRIPTION": "Electron AHV es gratuito y de código abierto, desarrollado a la vista. Si forma parte de tu rutina diaria, una pequeña contribución ayuda a mantener vivo el proyecto y a definir lo que viene — gracias.",
         "SUPPORT_SPONSORS_HINT": "Recurrente o única vez",
         "SUPPORT_KOFI_HINT": "Invítame un café",
-        "EPG_NOTE": "Actualmente, EPG está disponible sólo en la versión electrónica de IPTVnator.",
+        "EPG_NOTE": "Actualmente, EPG está disponible sólo en la versión electrónica de Electron AHV.",
         "EPG_NOTE_URL_TEXT": "Compruébalo aquí",
         "IMPORT_EXPORT_DATA": "Importar/exportar copias de seguridad",
         "IMPORT_EXPORT_DATA_DESCRIPTION": "Exporte o restaure copias de seguridad con instantáneas M3U, metadatos de conexión de Xtream/Stalker, estado del usuario y URLs de EPG.",
@@ -341,10 +341,10 @@
         "PLAYLISTS_REMOVED": "All playlists and playlist data were removed.",
         "MPV_PLAYER_PATH_LABEL": "Ruta de mpv",
         "MPV_PLAYER_PATH_DESCRIPTION": "Establece la ruta a MPV. En macOS puedes usar el paquete de la app MPV, como /Applications/mpv.app, o la ruta del ejecutable.",
-        "MPV_COMPATIBLE_PLAYER_TIP": "IINA puede iniciarse como reproductor compatible con MPV en macOS, pero usa su ruta ejecutable, como /Applications/IINA.app/Contents/MacOS/iina-cli o /Applications/IINA.app/Contents/MacOS/IINA. Los controles de IPTVnator, el seguimiento de posición y la reutilización de instancia solo están garantizados con MPV IPC.",
+        "MPV_COMPATIBLE_PLAYER_TIP": "IINA puede iniciarse como reproductor compatible con MPV en macOS, pero usa su ruta ejecutable, como /Applications/IINA.app/Contents/MacOS/iina-cli o /Applications/IINA.app/Contents/MacOS/IINA. Los controles de Electron AHV, el seguimiento de posición y la reutilización de instancia solo están garantizados con MPV IPC.",
         "MPV_PLAYER_PATH": "ruta del reproductor mpv",
         "MPV_PLAYER_ARGUMENTS_LABEL": "mpv command-line arguments",
-        "MPV_PLAYER_ARGUMENTS_DESCRIPTION": "Optional arguments passed to mpv when IPTVnator starts a new external player process.",
+        "MPV_PLAYER_ARGUMENTS_DESCRIPTION": "Optional arguments passed to mpv when Electron AHV starts a new external player process.",
         "MPV_PLAYER_ARGUMENTS": "mpv arguments",
         "MPV_REUSE_INSTANCE_LABEL": "Reutilizar instancia de MPV",
         "MPV_REUSE_INSTANCE_DESCRIPTION": "Cuando esta opción está activada, se reutiliza la misma ventana de MPV para reproducir distintos streams. Cuando está desactivada, cada stream se abre en una nueva ventana de MPV.",
@@ -356,9 +356,9 @@
         "VLC_PLAYER_PATH_DESCRIPTION": "Establece la ruta a VLC. En macOS puedes usar el paquete de la app VLC, como /Applications/VLC.app, o la ruta del ejecutable.",
         "VLC_PLAYER_PATH": "Ruta del reproductor VLC",
         "VLC_PLAYER_ARGUMENTS_LABEL": "VLC command-line arguments",
-        "VLC_PLAYER_ARGUMENTS_DESCRIPTION": "Optional arguments passed to VLC when IPTVnator starts a new external player process.",
+        "VLC_PLAYER_ARGUMENTS_DESCRIPTION": "Optional arguments passed to VLC when Electron AHV starts a new external player process.",
         "VLC_PLAYER_ARGUMENTS": "VLC arguments",
-        "EXTERNAL_PLAYER_ARGUMENTS_HINT": "Use one argument per line. These values are applied before stream-specific IPTVnator options.",
+        "EXTERNAL_PLAYER_ARGUMENTS_HINT": "Use one argument per line. These values are applied before stream-specific Electron AHV options.",
         "VLC_REUSE_INSTANCE_LABEL": "Reutilizar instancia de VLC",
         "VLC_REUSE_INSTANCE_DESCRIPTION": "Cuando esta opción está activada, se reutiliza la misma ventana de VLC para reproducir distintos streams. Cuando está desactivada, cada stream se abre en una nueva ventana de VLC.",
         "REMOTE_CONTROL": "Control remoto",
@@ -611,10 +611,10 @@
         "RETRY": "Reintentar",
         "ALLOW_PRIVATE_SOURCE": "Allow source",
         "ALLOW_PRIVATE_SOURCE_TITLE": "Allow private-network EPG source?",
-        "ALLOW_PRIVATE_SOURCE_WARNING": "Only allow this if you trust the EPG source. IPTVnator will let this exact EPG URL connect to private or local network addresses.",
+        "ALLOW_PRIVATE_SOURCE_WARNING": "Only allow this if you trust the EPG source. Electron AHV will let this exact EPG URL connect to private or local network addresses.",
         "TRUST_TLS_HOST": "Trust host",
         "TRUST_TLS_HOST_TITLE": "Trust invalid certificate?",
-        "TRUST_TLS_HOST_WARNING": "Only continue if you trust this host. IPTVnator will allow invalid TLS certificates for this host, but other hosts still require valid certificates.",
+        "TRUST_TLS_HOST_WARNING": "Only continue if you trust this host. Electron AHV will allow invalid TLS certificates for this host, but other hosts still require valid certificates.",
         "CURRENT_PROGRAM": "Current program",
         "ARCHIVE_PLAYBACK": "Reproducción de archivo",
         "RETURN_TO_LIVE": "Volver al directo",
@@ -645,7 +645,7 @@
     "NO": "No",
     "MENU": {
         "OPEN": "Abrir menú",
-        "SUPPORT_ARIA": "Apoyar IPTVnator en GitHub",
+        "SUPPORT_ARIA": "Apoyar Electron AHV en GitHub",
         "SETTINGS": "Ajustes",
         "SETTINGS_ARIA": "Abrir ajustes",
         "BUG_REPORT": "Reportar un  bug",
@@ -655,7 +655,7 @@
         "SUPPORT_PROJECT": "Proyecto de apoyo"
     },
     "ABOUT": {
-        "TITLE": "Acerca de IPTVnator",
+        "TITLE": "Acerca de Electron AHV",
         "DESCRIPTION": "Reproductor IPTV multiplataforma con múltiples funciones, como soporte de listas de reproducción m3u y m3u8, favoritos, guía de TV, archivo/Catchup de TV y más.",
         "VERSION": "Versión",
         "GITHUB_TOOLTIP": "Repositorio ITPVnator en GitHub",
@@ -887,8 +887,8 @@
         "SUBTITLE": "Controla tu reproductor IPTV de forma remota",
         "UP_CHANNEL": "Canal arriba",
         "DOWN_CHANNEL": "Canal abajo",
-        "HEADER": "Control remoto de IPTVnator",
-        "FOOTER": "Control remoto de IPTVnator"
+        "HEADER": "Control remoto de Electron AHV",
+        "FOOTER": "Control remoto de Electron AHV"
     },
     "WORKSPACE": {
         "FAVORITES_ONLY": "Solo favoritos",
@@ -943,7 +943,7 @@
             "FAVORITE_MOVIES_AND_SERIES": "Favorite movies & series"
         },
         "SHELL": {
-            "BRAND_ALT": "IPTVnator",
+            "BRAND_ALT": "Electron AHV",
             "RAIL_DASHBOARD": "Panel",
             "OPEN_DASHBOARD": "Abrir panel",
             "RAIL_SOURCES": "Fuentes",
@@ -1123,7 +1123,7 @@
         },
         "SHORTCUTS": {
             "TITLE": "Keyboard shortcuts",
-            "SUBTITLE": "Workspace, navigation, playback, and dialog shortcuts available in IPTVnator.",
+            "SUBTITLE": "Workspace, navigation, playback, and dialog shortcuts available in Electron AHV.",
             "OPEN_TOOLTIP": "Keyboard shortcuts (?)",
             "OPEN_ARIA": "Open keyboard shortcuts",
             "PLATFORM": {

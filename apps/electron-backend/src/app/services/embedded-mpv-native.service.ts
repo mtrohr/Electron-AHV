@@ -418,7 +418,7 @@ export class EmbeddedMpvNativeService {
 
         const targetPath = this.reserveRecordingTargetPath(
             directory,
-            options.title || session.title || 'IPTVnator recording'
+            options.title || session.title || 'Electron AHV recording'
         );
         try {
             addon.startRecording(sessionId, targetPath);
@@ -677,7 +677,7 @@ export class EmbeddedMpvNativeService {
         const windowHandle = App.mainWindow.getNativeWindowHandle();
         if (this.isInvalidLinuxWaylandWindowHandle(windowHandle)) {
             throw new Error(
-                'Embedded MPV on Linux requires Electron to run under X11 or Xwayland. Native Wayland embedding is not supported yet. Start IPTVnator with --ozone-platform=x11.'
+                'Embedded MPV on Linux requires Electron to run under X11 or Xwayland. Native Wayland embedding is not supported yet. Start Electron AHV with --ozone-platform=x11.'
             );
         }
 
@@ -738,7 +738,7 @@ export class EmbeddedMpvNativeService {
             .replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_')
             .replace(/\s+/g, ' ')
             .trim();
-        return (normalized || 'IPTVnator recording').slice(0, 120);
+        return (normalized || 'Electron AHV recording').slice(0, 120);
     }
 
     private formatRecordingTimestamp(date: Date): string {
@@ -805,7 +805,7 @@ export class EmbeddedMpvNativeService {
         this.cachedLinuxMpvExecutableReason =
             result.status === 0
                 ? null
-                : 'Embedded MPV on Linux requires the mpv executable on PATH. Install the mpv package for your distribution and restart IPTVnator.';
+                : 'Embedded MPV on Linux requires the mpv executable on PATH. Install the mpv package for your distribution and restart Electron AHV.';
         return this.cachedLinuxMpvExecutableReason;
     }
 

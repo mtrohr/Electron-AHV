@@ -1,12 +1,12 @@
 {
-    "appId": "com.fourgray.iptvnator",
-    "productName": "IPTVnator",
+    "appId": "com.astranet.electronahv",
+    "productName": "Electron AHV",
     "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "publish": [
         {
             "provider": "github",
-            "owner": "4gray",
-            "repo": "iptvnator"
+            "owner": "mtrohr",
+            "repo": "Electron-AHV"
         }
     ],
     "directories": {
@@ -35,8 +35,8 @@
         "**/embedded-mpv-runtime.json"
     ],
     "extraMetadata": {
-        "name": "iptvnator",
-        "productName": "IPTVnator",
+        "name": "electron-ahv",
+        "productName": "Electron AHV",
         "main": "electron-backend/main.js"
     },
     "extraResources": ["dist/apps/electron-backend/workers"],
@@ -62,11 +62,11 @@
     },
     "linux": {
         "category": "Video",
-        "executableName": "iptvnator",
+        "executableName": "electron-ahv",
         "executableArgs": ["--ozone-platform=x11"],
         "desktop": {
             "entry": {
-                "StartupWMClass": "iptvnator"
+                "StartupWMClass": "Electron AHV"
             }
         },
         "target": [
