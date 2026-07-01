@@ -2,6 +2,7 @@ import { InjectionToken } from '@angular/core';
 import type { XtreamAccountInfoDialogData } from '@iptvnator/shared/interfaces';
 
 export type WorkspacePlaylistType =
+    | 'streamvault'
     | 'xtream'
     | 'url'
     | 'text'
