@@ -1,12 +1,11 @@
 {
-    "name": "iptvnator",
+    "name": "electron-ahv",
     "version": "0.22.0",
     "license": "MIT",
     "description": "IPTV player application.",
-    "homepage": "https://github.com/4gray/iptvnator",
+    "homepage": "https://github.com/mtrohr/Electron-AHV",
     "author": {
-        "name": "4gray",
-        "email": "fourgray@proton.me"
+        "name": "mtrohr"
     },
     "keywords": [
         "angular",
