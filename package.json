@@ -218,6 +218,7 @@
         "typescript-eslint": "^8.46.2"
     },
     "pnpm": {
+        "publicHoistPattern": ["ms"],
         "overrides": {
             "@hono/node-server@1.19.9": "1.19.14",
             "ajv@6.12.6": "6.14.0",

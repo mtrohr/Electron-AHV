@@ -62,6 +62,15 @@ export function buildElectronBuilderMetadata(
     };
 }
 
+// These transitive deps must be explicit so electron-builder's pnpm staging
+// install hoists them to root node_modules (pnpm strict isolation otherwise
+// leaves them only in the virtual store, causing "Cannot find module" errors
+// at runtime inside the packaged asar).
+const REQUIRED_HOISTED_DEPS = {
+    debug: '4.4.3',
+    ms: '2.1.3',
+};
+
 export function buildElectronPackageMetadata(
     packageMetadata,
     electronBuilderConfig = {},
@@ -71,6 +80,10 @@ export function buildElectronPackageMetadata(
         ...currentElectronPackageMetadata,
         ...buildElectronBuilderMetadata(packageMetadata, electronBuilderConfig)
             .extraMetadata,
+        dependencies: {
+            ...(currentElectronPackageMetadata.dependencies ?? {}),
+            ...REQUIRED_HOISTED_DEPS,
+        },
     });
 }
 
