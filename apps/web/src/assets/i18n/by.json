@@ -130,7 +130,7 @@
         },
         "ADD_PLAYLIST": {
             "PICK_METHOD": "Выберыце, як вы хочаце падключыцца. Перайменаваць можна пазней.",
-            "METHOD_STREAMVAULT_LABEL": "Astranet Services",
+            "METHOD_STREAMVAULT_LABEL": "AHV Services",
             "METHOD_STREAMVAULT_SUB": "Pick your service, enter your credentials",
             "METHOD_URL_LABEL": "M3U URL",
             "METHOD_URL_SUB": "Устаўце спасылку на выдалены .m3u або .m3u8",

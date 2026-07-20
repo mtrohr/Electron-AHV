@@ -130,7 +130,7 @@
         },
         "ADD_PLAYLIST": {
             "PICK_METHOD": "Choisissez comment vous souhaitez vous connecter. Vous pourrez renommer la liste plus tard.",
-            "METHOD_STREAMVAULT_LABEL": "Astranet Services",
+            "METHOD_STREAMVAULT_LABEL": "AHV Services",
             "METHOD_STREAMVAULT_SUB": "Pick your service, enter your credentials",
             "METHOD_URL_LABEL": "URL M3U",
             "METHOD_URL_SUB": "Collez un lien vers un fichier .m3u ou .m3u8 distant",
